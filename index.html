@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="auteur" content="Danesh Khodadad" />
-    <meta name="description" content="This is Danesh Khodadad's CV " />
+    <meta name="author" content="Juan Gustavo Ángel Cruz Méndez" />
+    <meta
+      name="description"
+      content="CV web de Juan Gustavo Ángel Cruz Méndez, desarrollador de software con enfoque en backend, ciberseguridad y soluciones SaaS."
+    />
 
     <link rel="icon" type="image/x-icon" href="./assets/img/favicon.png" />
     <!--==================== UNICONS ====================-->
@@ -12,471 +15,628 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-    <!--==================== SWIPER CSS ====================-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.css"
-    />
+
 
     <!--==================== AOS CSS ====================-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!--==================== W3.CSS====================-->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="./styles.css" />
 
-    <title>Danesh - Khodadad</title>
+    <title>Juan Gustavo Ángel Cruz Méndez | CV</title>
   </head>
 
   <body id="body" class="dark-theme">
     <!--==================== HEADER ====================-->
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="nav__logo"> Danesh </a>
+        <a href="#" class="nav__logo">Juan Gustavo</a>
 
         <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list grid">
+          <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">
-                <i class="uil uil-estate nav__icon"></i> Home
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate"></i> Inicio
               </a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <i class="uil uil-user nav__icon"></i> About
+                <i class="uil uil-user"></i> Sobre mí
               </a>
             </li>
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <i class="uil uil-file-alt nav__icon"></i> Skills
+                <i class="uil uil-file-alt"></i> Habilidades
               </a>
             </li>
             <li class="nav__item">
-              <a href="#services" class="nav__link">
-                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-briefcase-alt"></i> Proyectos
               </a>
             </li>
             <li class="nav__item">
-              <a href="#portfolio" class="nav__link">
-                <i class="uil uil-scenery nav__icon"></i> Portfolio
+              <a href="#tech" class="nav__link">
+                <i class="uil uil-cog"></i> Tecnologías
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#experience" class="nav__link">
+                <i class="uil uil-scenery"></i> Trayectoria
               </a>
             </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contactme
+                <i class="uil uil-message"></i> Contacto
               </a>
             </li>
           </ul>
-          <i class="uil uil-times nav__close nav__icon" id="nav-close"></i>
         </div>
-        <div class="nav__btns">
-          <!-- theme change button  -->
-          <i class="uil uil-moon change-theme" id="theme-button"></i>
 
-          <div class="nav__toggle" id="nav-toggle">
-            <i class="uil uil-apps nav__icon"></i>
-          </div>
+        <div class="nav__btns">
+          <!-- theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
         </div>
       </nav>
     </header>
 
+    <!--==================== MOBILE BOTTOM DOCK ====================-->
+    <nav class="mobile-dock">
+      <ul class="mobile-dock__list">
+        <li class="mobile-dock__item">
+          <a href="#home" class="mobile-dock__link active-link" title="Inicio">
+            <i class="uil uil-estate"></i>
+            <span class="mobile-dock__label">Inicio</span>
+          </a>
+        </li>
+        <li class="mobile-dock__item">
+          <a href="#about" class="mobile-dock__link" title="Sobre mí">
+            <i class="uil uil-user"></i>
+            <span class="mobile-dock__label">Sobre mí</span>
+          </a>
+        </li>
+        <li class="mobile-dock__item">
+          <a href="#skills" class="mobile-dock__link" title="Habilidades">
+            <i class="uil uil-file-alt"></i>
+            <span class="mobile-dock__label">Habilidades</span>
+          </a>
+        </li>
+        <li class="mobile-dock__item">
+          <a href="#projects" class="mobile-dock__link" title="Proyectos">
+            <i class="uil uil-briefcase-alt"></i>
+            <span class="mobile-dock__label">Proyectos</span>
+          </a>
+        </li>
+        <li class="mobile-dock__item">
+          <a href="#tech" class="mobile-dock__link" title="Tecnologías">
+            <i class="uil uil-cog"></i>
+            <span class="mobile-dock__label">Tecnologías</span>
+          </a>
+        </li>
+        <li class="mobile-dock__item">
+          <a href="#experience" class="mobile-dock__link" title="Trayectoria">
+            <i class="uil uil-scenery"></i>
+            <span class="mobile-dock__label">Trayectoria</span>
+          </a>
+        </li>
+        <li class="mobile-dock__item">
+          <a href="#contact" class="mobile-dock__link" title="Contacto">
+            <i class="uil uil-message"></i>
+            <span class="mobile-dock__label">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
     <!--==================== MAIN ====================-->
     <main class="main">
-      <!--==================== HOME ====================-->
+      
+      <!--==================== HOME / HERO ====================-->
       <section class="home section" id="home">
-        <div class="home__conatiner container grid">
-          <div class="home__content grid">
+        <div class="home__container container grid">
+          <div 
+            class="home__data"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <div class="capsule">
+              <i class="uil uil-rocket"></i> Backend Developer & Cloud Enthusiast
+            </div>
+            
+            <h1 class="home__title">
+              Hola, soy <span>Juan Gustavo</span>
+            </h1>
+            
+            <h3 class="home__subtitle" id="target">
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "Desarrollador de Software", "Backend Developer", "Software Engineer Student" ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h3>
+            
+            <p class="home__description">
+              Desarrollador de software con experiencia en el ciclo de vida de productos SaaS, backend con ASP.NET, NestJS y Node.js, ciberseguridad, optimización de bases de datos y servicios en la nube.
+            </p>
+            
+            <div class="home__actions">
+              <a href="#contact" class="btn btn--primary">
+                Contáctame <i class="uil uil-message btn__icon"></i>
+              </a>
+              <a 
+                download=""
+                href="./assets/PDF/Juan_Gustavo_Cruz_Mendez_CV.pdf"
+                class="btn btn--secondary"
+              >
+                Descargar CV <i class="uil uil-download-alt btn__icon"></i>
+              </a>
+            </div>
+
             <div class="home__social">
               <a
-                href="https://www.linkedin.com/in/DaneshCode"
+                href="https://www.linkedin.com/in/juan-gustavo-angel-cruz-mendez-23413231b/"
                 target="_blank"
-                class="home_social-icon"
+                class="home__social-icon"
+                title="LinkedIn"
               >
                 <i class="uil uil-linkedin-alt"></i>
               </a>
 
               <a
-                href="https://github.com/DaneshCode"
+                href="https://github.com/gusmendez3249"
                 target="_blank"
-                class="home_social-icon"
+                class="home__social-icon"
+                title="GitHub"
               >
                 <i class="uil uil-github"></i>
               </a>
+
               <a
-                href="mailto:DaneshCode.Dev@gmail.com"
+                href="mailto:gustavoangelc2005@gmail.com"
                 target="_blank"
-                class="home_social-icon"
+                class="home__social-icon"
+                title="Email"
               >
                 <i class="uil uil-envelope"></i>
               </a>
             </div>
-            <div
-              class="home__img"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-duration="2500"
-            >
-              <svg
-                class="home__blob"
-                viewBox="0 0 200 187"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <mask id="mask0" mask-type="alpha">
-                  <circle cx="100" cy="89" r="87" />
-                </mask>
-                <g mask="url(#mask0)">
-                  <path
-                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                  />
-
-                  <image
-                    class="home__blob-img"
-                    x="12"
-                    y="0"
-                    width="187"
-                    height="177"
-                    href="./assets/img/Avatar.jpg"
-                  ></image>
-                </g>
-              </svg>
-            </div>
-
-            <div
-              class="home__data"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-duration="2500"
-            >
-              <h1 class="home__title">Hi, I'm Danesh</h1>
-              <h3 class="home__subtitle" id="target">
-                <!-- Frontend developer -->
-                <a
-                  href=""
-                  class="typewrite"
-                  data-period="2000"
-                  data-type='[ "Frontend Developer"]'
-                >
-                  <span class="wrap"></span>
-                </a>
-              </h3>
-              <p class="home__description">Junior Developer.</p>
-              <a href="#contact" class="button button--flex">
-                Contact Me<i class="uil uil-message button__icon"></i>
-              </a>
-            </div>
           </div>
-          <div class="home__scroll">
-            <a href="#about" class="home__scroll-button button--flex">
-              <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
-              <span class="home__scroll-name">Scroll down</span>
-              <i class="uil uil-arrow-down home_scroll-arrow"></i>
-            </a>
+
+          <div 
+            class="home__img-wrapper"
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
+            <div class="home__img-deco"></div>
+            <div class="home__img-blob">
+              <img src="./assets/img/Avatar.jpg" alt="Juan Gustavo" />
+            </div>
           </div>
         </div>
       </section>
 
-      <!--==================== ABOUT ====================-->
-      <section
-        class="about section"
-        id="about"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
-      >
+      <!--==================== ABOUT ME ====================-->
+      <section class="about section" id="about">
         <h2 class="section__title">About Me</h2>
-        <span class="section__subtitle">My intorduction</span>
+        <span class="section__subtitle">¿Quién soy?</span>
+        
         <div class="about__container container grid">
-          <img
-            src="./assets/img/menWithPC.png"
-            alt="men-with-pc"
-            class="about__img"
+          <div 
+            class="about__console"
             data-aos="fade-right"
-            data-aos-offset="300"
-            data-aos-duration="2500"
-          />
-          <div class="about__data">
-            <code
-              class="about__description"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-duration="2500"
-            >
-              <span class="token keyword">const</span>
-              <span class="token class-name">Danesh</span> =
-              <span class="token punctuation">{</span>
-              <br />
-              <span class="token keyword">pronouns</span>:
-              <span class="token string">"He"</span>
-              <span class="token keyword">|</span>
-              <span class="token string">"Him"</span>,
-              <br />
-              <span class="token keyword">age</span>:
-              <span class="token string">"20 years old"</span>,
-              <br />
-              <span class="token keyword">city</span>:
-              <span class="token string">"Shiraz"</span>,
-              <br />
-              <span class="token keyword">code</span>:
-              <span class="token punctuation">[</span>
-              <span class="token string">"Javascript"</span>,
-              <span class="token string">"React.js"</span>,
-              <span class="token string">"Html"</span>,
-              <span class="token string">"Css"</span>
-              <span class="token punctuation">]</span>,
-              <br />
-              <span class="token keyword">askMeAbout</span>:
-              <span class="token punctuation">[</span>
-              <span class="token string">"web dev"</span>,
-              <span class="token string">"Frontend"</span>
-              <span class="token punctuation">]</span>,
-              <br />
-              <span class="token keyword">currentFocus</span>:
-              <span class="token string">"Update my knowledge"</span>,
-              <br />
-              <span class="token keyword">funFact</span>:
-              <span class="token string"
-                >"There are two ways to write error-free programs; only the
-                third one works"</span
-              >
-              <br />
-              <span class="token punctuation">}</span>;
-            </code>
-
-            <div class="about__info">
-              <div>
-                <span class="about__info-title"> 01+ </span>
-                <span class="about__info-name">
-                  Years <br />
-                  experience
-                </span>
+            data-aos-duration="1200"
+          >
+            <div class="about__console-header">
+              <div class="about__console-controls">
+                <span class="about__console-dot dot-close"></span>
+                <span class="about__console-dot dot-minimize"></span>
+                <span class="about__console-dot dot-expand"></span>
               </div>
+              <span class="about__console-title">developer.js</span>
+            </div>
+            <div class="about__console-body">
+              <code><span class="token keyword">const</span> <span class="token class-name">JuanGustavo</span> = <span class="token punctuation">{</span>
+  <span class="token keyword">edad</span>: <span class="token string">"20 años"</span>,
+  <span class="token keyword">city</span>: <span class="token string">"Irapuato, Gto"</span>,
+  <span class="token keyword">code</span>: <span class="token punctuation">[</span>
+    <span class="token string">"C#"</span>, <span class="token string">"JavaScript"</span>,
+    <span class="token string">"TypeScript"</span>, <span class="token string">"Python"</span>,
+    <span class="token string">"Java"</span>
+  <span class="token punctuation">]</span>,
+  <span class="token keyword">frameworks</span>: <span class="token punctuation">[</span>
+    <span class="token string">"ASP.NET"</span>, <span class="token string">"NestJS"</span>,
+    <span class="token string">"Node.js"</span>, <span class="token string">"Angular"</span>,
+    <span class="token string">"React"</span>, <span class="token string">"Flutter"</span>
+  <span class="token punctuation">]</span>,
+  <span class="token keyword">askMeAbout</span>: <span class="token punctuation">[</span>
+    <span class="token string">"backend"</span>, <span class="token string">"APIs REST"</span>,
+    <span class="token string">"bases de datos"</span>,
+    <span class="token string">"ciberseguridad"</span>
+  <span class="token punctuation">]</span>,
+  <span class="token keyword">currentFocus</span>: <span class="token string">"Soluciones escalables, seguras y de alto rendimiento"</span>,
+  <span class="token keyword">funFact</span>: <span class="token string">"Me enfoco en rendimiento, seguridad y experiencia de usuario"</span>
+<span class="token punctuation">}</span>;</code>
+            </div>
+          </div>
 
-              <div>
-                <span class="about__info-title"> 10+ </span>
-                <span class="about__info-name">
-                  Completed <br />
-                  projects
-                </span>
+          <div 
+            class="about__data"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <p class="about__info-desc">
+              Desarrollador backend y estudiante de Ingeniería de Software apasionado por construir arquitecturas de sistemas estables, seguras y altamente eficientes. Con fuerte base en ciberseguridad, diseño de APIs robustas y auditoría de vulnerabilidades web para garantizar que el software no solo sea rápido, sino también infranqueable.
+            </p>
+
+            <div class="about__metrics">
+              <div class="about__metric-card glass-panel">
+                <span class="about__metric-number">02+</span>
+                <span class="about__metric-label">Años de formación<br />y práctica</span>
               </div>
-
-              <div>
-                <span class="about__info-title"> 03+ </span>
-                <span class="about__info-name">
-                  Companies <br />
-                  worked
-                </span>
+              <div class="about__metric-card glass-panel">
+                <span class="about__metric-number">02</span>
+                <span class="about__metric-label">Experiencias<br />profesionales</span>
+              </div>
+              <div class="about__metric-card glass-panel">
+                <span class="about__metric-number">06+</span>
+                <span class="about__metric-label">Tecnologías<br />principales</span>
               </div>
             </div>
 
-            <div class="about__buttons">
-              <a
-                download=""
-                href="./assets/PDF/Danesh's_Resume.pdf"
-                class="button button--flex"
-              >
-                Download CV <i class="uil uil-download-alt button__icon"></i>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="#experience" class="btn btn--primary">
+                Ver Trayectoria <i class="uil uil-arrow-right btn__icon"></i>
               </a>
+              <img 
+                src="./assets/img/menWithPC.png" 
+                alt="Developer Working" 
+                style="display:none;" 
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!--==================== SKILLS ====================-->
-      <section
-        class="skills section"
-        id="skills"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
-      >
-        <h2 class="section__title">Skills</h2>
-        <span class="section__subtitle">My technical level</span>
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Habilidades Técnicas</h2>
+        <span class="section__subtitle">Competencias profesionales</span>
 
         <div class="skills__container container grid">
-          <div>
-            <!-- ------------- SKILL 1 ------------ -->
-            <div class="skills__content skills__open">
-              <div class="skills__header">
-                <i class="uil uil-brackets-curly skills__icon"></i>
-
-                <div>
-                  <h1 class="skills__title">Frontend Developer</h1>
-                  <span class="skills__subtitle">More than 1 years</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
+          <!-- SOFT SKILLS CARD -->
+          <div 
+            class="skills__content glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="skills__header">
+              <div class="skills__icon-box">
+                <i class="uil uil-brackets-curly"></i>
               </div>
+              <div>
+                <h3 class="skills__title">Habilidades blandas</h3>
+                <span class="skills__subtitle">Trabajo en equipo y adaptación</span>
+              </div>
+            </div>
 
-              <div class="skills__list grid">
-                <!-- <div class="skills__data">
-                                <div class="skills__title">
-                                    <h3 class="skills__name">HTML & Css</h3>
-                                    <span class="skills__number">90%</span>
-                                </div>
-                                <div class="skills__bar">
-                                    <span class="skills__percentage skills__html"></span>
-                                </div>
-                            </div> -->
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">HTML & Css</h3>
-                    <span class="skills__number">80%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__css"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__number">60%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__js"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__react"></span>
-                  </div>
-                </div>
+            <div class="skills__list">
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Trabajo en equipo (Scrum)</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Resolución de problemas</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Comunicación asertiva</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Gestión del tiempo</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Adaptabilidad</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Cuidado en los detalles</span>
               </div>
             </div>
           </div>
-          <div>
-            <!-- ------------- SKILL 2 ------------ -->
-            <div class="skills__content skills__close">
-              <div class="skills__header">
-                <i class="uil uil-desktop skills__icon"></i>
 
-                <div>
-                  <h1 class="skills__title">Other</h1>
-                  <span class="skills__subtitle">More than 1 years</span>
-                </div>
-                <i class="uil uil-angle-down skills__arrow"></i>
+          <!-- TECHNICAL SKILLS CARD -->
+          <div 
+            class="skills__content glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <div class="skills__header">
+              <div class="skills__icon-box">
+                <i class="uil uil-server-network"></i>
               </div>
+              <div>
+                <h3 class="skills__title">Habilidades técnicas</h3>
+                <span class="skills__subtitle">Backend, cloud y seguridad</span>
+              </div>
+            </div>
 
-              <div class="skills__list grid">
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__number">50%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__git"></span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <div class="skills__title">
-                    <h3 class="skills__name">VsCode</h3>
-                    <span class="skills__number">70%</span>
-                  </div>
-                  <div class="skills__bar">
-                    <span class="skills__percentage skills__vscode"></span>
-                  </div>
-                </div>
+            <div class="skills__list">
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">ASP.NET (C#)</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">NestJS</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Node.js</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">SQL Server / MySQL</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">MongoDB / SQLite</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">AWS / Docker / Git / Postman</span>
+              </div>
+              <div class="skills__badge">
+                <span class="skills__badge-dot"></span>
+                <span class="skills__badge-name">Auditoría web / SQLi / XSS</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!--==================== QUALIFICATION ====================-->
-      <section
-        class="qualification section"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
-      >
-        <h2 class="section__title">Qualification</h2>
-        <span class="section__subtitle">My personal journey</span>
+      <!--==================== PROYECTOS ====================-->
+      <section class="portfolio section" id="projects">
+        <h2 class="section__title">Proyectos</h2>
+        <span class="section__subtitle">Trabajos destacados</span>
 
-        <div class="qualification__container container">
-          <div class="qualification__tabs">
-            <div class="qualification__button button--flex" id="education-btn">
-              <i class="uil uil-graduation-cap qualification__icon"></i>
-              Education
+        <div 
+          class="portfolio__container container grid"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <!-- PROJECT 1 -->
+          <div class="portfolio__card glass-panel">
+            <div class="portfolio__header">
+              <div class="portfolio__icon-box">
+                <i class="uil uil-server"></i>
+              </div>
+              <span class="portfolio__tag">SaaS / Backend</span>
             </div>
-
-            <div class="qualification__button button--flex" id="work-btn">
-              <i class="uil uil-briefcase-alt qualification__icon"></i>
-              Work
+            
+            <h3 class="portfolio__title">Plataforma SaaS</h3>
+            <p class="portfolio__description">
+              Desarrollo backend con ASP.NET Framework, arquitectura de servicios, APIs RESTful y bases de datos SQL Server y MySQL.
+            </p>
+            
+            <div class="portfolio__footer">
+              <a href="#contact" class="btn btn--secondary btn--small">
+                Saber más <i class="uil uil-arrow-right btn__icon"></i>
+              </a>
             </div>
           </div>
-          <div class="qualification__sections">
-            <!--==================== QUALIFICATION Content 1 ====================-->
+
+          <!-- PROJECT 2 -->
+          <div class="portfolio__card glass-panel">
+            <div class="portfolio__header">
+              <div class="portfolio__icon-box">
+                <i class="uil uil-globe"></i>
+              </div>
+              <span class="portfolio__tag">Frontend / Angular</span>
+            </div>
+            
+            <h3 class="portfolio__title">Aplicación Web con Angular</h3>
+            <p class="portfolio__description">
+              Desarrollo de interfaz dinámica y responsiva, integración de APIs y optimización de experiencia de usuario.
+            </p>
+            
+            <div class="portfolio__footer">
+              <a href="#contact" class="btn btn--secondary btn--small">
+                Saber más <i class="uil uil-arrow-right btn__icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- PROJECT 3 -->
+          <div class="portfolio__card glass-panel">
+            <div class="portfolio__header">
+              <div class="portfolio__icon-box">
+                <i class="uil uil-mobile-android"></i>
+              </div>
+              <span class="portfolio__tag">Móvil / Flutter</span>
+            </div>
+            
+            <h3 class="portfolio__title">Aplicaciones móviles con Flutter</h3>
+            <p class="portfolio__description">
+              Creación de apps multiplataforma con Dart, enfocadas en usabilidad, rendimiento e integración con servicios externos.
+            </p>
+            
+            <div class="portfolio__footer">
+              <a href="#contact" class="btn btn--secondary btn--small">
+                Saber más <i class="uil uil-arrow-right btn__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TECNOLOGÍAS ====================-->
+      <section class="services section" id="tech">
+        <h2 class="section__title">Tecnologías Dominadas</h2>
+        <span class="section__subtitle">Stack técnico</span>
+
+        <div class="tech__container container grid">
+          <!-- CARD 1: LENGUAJES & FRAMEWORKS -->
+          <div 
+            class="tech__card glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div class="tech__card-header">
+              <i class="uil uil-code-branch tech__card-icon"></i>
+              <h3 class="tech__card-title">Lenguajes y frameworks</h3>
+            </div>
+            <div class="tech__badges">
+              <span class="tech__badge">C#</span>
+              <span class="tech__badge">JavaScript</span>
+              <span class="tech__badge">TypeScript</span>
+              <span class="tech__badge">Python</span>
+              <span class="tech__badge">Java</span>
+              <span class="tech__badge">ASP.NET</span>
+              <span class="tech__badge">NestJS</span>
+              <span class="tech__badge">Node.js</span>
+              <span class="tech__badge">Angular</span>
+              <span class="tech__badge">React</span>
+              <span class="tech__badge">Flutter</span>
+            </div>
+          </div>
+
+          <!-- CARD 2: DATABASES & SECURITY -->
+          <div 
+            class="tech__card glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="tech__card-header">
+              <i class="uil uil-database tech__card-icon"></i>
+              <h3 class="tech__card-title">Bases de datos y seguridad</h3>
+            </div>
+            <div class="tech__badges">
+              <span class="tech__badge">SQL Server</span>
+              <span class="tech__badge">MySQL</span>
+              <span class="tech__badge">MongoDB</span>
+              <span class="tech__badge">SQLite</span>
+              <span class="tech__badge">Auditoría web</span>
+              <span class="tech__badge">Prevención de SQLi</span>
+              <span class="tech__badge">Prevención de XSS</span>
+              <span class="tech__badge">Validaciones de servidor</span>
+            </div>
+          </div>
+
+          <!-- CARD 3: DEVOPS & TOOLS -->
+          <div 
+            class="tech__card glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <div class="tech__card-header">
+              <i class="uil uil-cloud-computing tech__card-icon"></i>
+              <h3 class="tech__card-title">Herramientas y DevOps</h3>
+            </div>
+            <div class="tech__badges">
+              <span class="tech__badge">AWS (S3, Secrets Manager)</span>
+              <span class="tech__badge">Docker</span>
+              <span class="tech__badge">Git</span>
+              <span class="tech__badge">TortoiseSVN</span>
+              <span class="tech__badge">Postman</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== TRAYECTORIA / EXPERIENCE ====================-->
+      <section class="qualification section" id="experience">
+        <h2 class="section__title">Trayectoria</h2>
+        <span class="section__subtitle">Formación y experiencia</span>
+
+        <div 
+          class="qualification__container container"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <!-- Sliding pill toggle switch -->
+          <div class="pill-toggle">
+            <button class="pill-toggle__btn active" id="education-btn">
+              <i class="uil uil-graduation-cap"></i> Educación
+            </button>
+            <button class="pill-toggle__btn" id="work-btn">
+              <i class="uil uil-briefcase-alt"></i> Experiencia
+            </button>
+            <!-- Background Pill Slider -->
+            <div class="pill-toggle__slider" id="pill-slider"></div>
+          </div>
+
+          <div class="qualification__sections" style="width: 100%;">
+            
+            <!--==================== EDUCATION CONTENT ====================-->
             <div
               class="qualification__content qualification__active"
-              data-content
               id="education"
             >
-              <!--==================== QUALIFICATION 1 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Computer Enginner</h3>
-                  <span class="qualification__subtitle">Zand - University</span>
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    2022 - Present
+              <div class="timeline">
+                <!-- item 1 -->
+                <div class="timeline__item">
+                  <span class="timeline__marker"></span>
+                  <div class="timeline__card-wrapper">
+                    <div class="timeline__card glass-panel">
+                      <h3 class="timeline__card-title">Ingeniería en Tecnologías de la Información</h3>
+                      <span class="timeline__card-subtitle">Universidad Tecnológica del Norte de Guanajuato (UTNG)</span>
+                      <div class="timeline__card-date">
+                        <i class="uil uil-calendar-alt"></i> 2023 - Presente
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-              </div>
 
-              <!--==================== QUALIFICATION 2 ====================-->
-              <div class="qualification__data">
-                <div></div>
-
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
-                </div>
-
-                <div>
-                  <h3 class="qualification__title">Math diploma</h3>
-                  <span class="qualification__subtitle"
-                    >Allameh Helli - high school</span
-                  >
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    2019 - 2022
+                <!-- item 2 -->
+                <div class="timeline__item">
+                  <span class="timeline__marker"></span>
+                  <div class="timeline__card-wrapper">
+                    <div class="timeline__card glass-panel">
+                      <h3 class="timeline__card-title">Técnico en Ciberseguridad</h3>
+                      <span class="timeline__card-subtitle">Bachillerato Bivalente Militarizado, Plantel Irapuato</span>
+                      <div class="timeline__card-date">
+                        <i class="uil uil-calendar-alt"></i> 2020 - 2023
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!--==================== QUALIFICATION Content 2 ====================-->
-            <div class="qualification__content" data-content id="work">
-              <!--==================== QUALIFICATION 1 ====================-->
-              <div class="qualification__data">
-                <div>
-                  <h3 class="qualification__title">Frontend Developer</h3>
-                  <span class="qualification__subtitle">Self learning</span>
-                  <div class="qualification__calender">
-                    <i class="uil uil-calendar-alt"></i>
-                    2023 - Present
+            <!--==================== WORK CONTENT ====================-->
+            <div class="qualification__content" id="work">
+              <div class="timeline">
+                <!-- item 1 -->
+                <div class="timeline__item">
+                  <span class="timeline__marker"></span>
+                  <div class="timeline__card-wrapper">
+                    <div class="timeline__card glass-panel">
+                      <h3 class="timeline__card-title">Desarrollador de Software Backend</h3>
+                      <span class="timeline__card-subtitle">NAD Global</span>
+                      <div class="timeline__card-date">
+                        <i class="uil uil-calendar-alt"></i> Mayo 2025 - Febrero 2026
+                      </div>
+                    </div>
                   </div>
                 </div>
 
-                <div>
-                  <span class="qualification__rounder"></span>
-                  <span class="qualification__line"></span>
+                <!-- item 2 -->
+                <div class="timeline__item">
+                  <span class="timeline__marker"></span>
+                  <div class="timeline__card-wrapper">
+                    <div class="timeline__card glass-panel">
+                      <h3 class="timeline__card-title">Desarrollador de Software (Aprendiz)</h3>
+                      <span class="timeline__card-subtitle">Universidad Tecnológica del Norte de Guanajuato</span>
+                      <div class="timeline__card-date">
+                        <i class="uil uil-calendar-alt"></i> Septiembre 2023 - Actualidad
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -484,345 +644,285 @@
         </div>
       </section>
 
-      <!--==================== SERVICES ====================-->
-      <section
-        class="services section"
-        id="services"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
-      >
-        <h2 class="section__title">Services</h2>
-        <span class="section__subtitle">What i offer</span>
+      <!--==================== SERVICIOS ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title">Servicios</h2>
+        <span class="section__subtitle">Lo que ofrezco</span>
 
         <div class="services__container container grid">
-          <!--==================== SERVICES 1 ====================-->
-          <div class="services__content">
-            <i class="uil uil-arrow services__icon"></i>
-
-            <h3 class="services__title">
-              Frontend <br />
-              Developer
-            </h3>
-
-            <span
-              class="button button--flex button--small button--link services__button"
-            >
-              View more
-              <i class="uil uil-arrow-right button__icon"></i>
+          <!-- SERVICE 1 -->
+          <div 
+            class="services__card glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            <div>
+              <i class="uil uil-server services__icon"></i>
+              <h3 class="services__title">Desarrollo <br />Backend</h3>
+            </div>
+            <p class="services__description">
+              Creación de APIs RESTful sólidas y seguras, diseño de lógica empresarial eficiente y arquitectura de datos escalables.
+            </p>
+            <span class="services__btn">
+              Ver más <i class="uil uil-arrow-right"></i>
             </span>
 
             <div class="services__modal">
               <div class="services__modal-content">
-                <h4 class="services__modal-title">
-                  Frontend <br />
-                  Developer
-                </h4>
-
                 <i class="uil uil-times services__modal-close"></i>
-                <ul class="services__modal-services grid">
-                  <li class="services__modal-service">
+                <h4 class="services__modal-title">Desarrollo Backend</h4>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Develope the user interface</p>
+                    <p>Desarrollo de APIs RESTful y módulos de negocio complejos.</p>
                   </li>
-
-                  <li class="services__modal-service">
+                  <li class="services__modal-item">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Have taste and creativity</p>
+                    <p>Diseño, migración y optimización de bases de datos relacionales robustas.</p>
                   </li>
-
-                  <li class="services__modal-service">
+                  <li class="services__modal-item">
                     <i class="uil uil-check-circle services__modal-icon"></i>
-                    <p>Develope a responsive web page</p>
+                    <p>Arquitectura de servicios escalable y segura bajo principios SOLID.</p>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!--==================== SERVICES 3 ====================-->
-          <!-- <div class="services__content">
-                    <i class="uil uil-pen services__icon"></i>
-                    <h3 class="services__title">
-                        Backend <br>
-                        Developer
-                    </h3>
+          <!-- SERVICE 2 -->
+          <div 
+            class="services__card glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div>
+              <i class="uil uil-shield-check services__icon"></i>
+              <h3 class="services__title">Seguridad <br />Web</h3>
+            </div>
+            <p class="services__description">
+              Auditorías de código y análisis de vulnerabilidades críticas. Prácticas robustas para asegurar datos confidenciales.
+            </p>
+            <span class="services__btn">
+              Ver más <i class="uil uil-arrow-right"></i>
+            </span>
 
-                    <span class="button button--flex button--small button--link services__button">
-                        View more
-                        <i class="uil uil-arrow-right button__icon"></i>
-                    </span>
-
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <h4 class="services__modal-title">
-                                Backend <br>
-                                Developer
-                            </h4>
-
-                            <i class="uil uil-times services__modal-close"></i>
-                            <ul class="services__modal-services grid">
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develope the user interface</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>Web page development</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develope the user interface</p>
-                                </li>
-
-                                <li class="services__modal-service">
-                                    <i class="uil uil-check-circle services__modal-icon"></i>
-                                    <p>I develope the user interface</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div> -->
-        </div>
-      </section>
-
-      <!--==================== PORTFOLIO ====================-->
-      <section
-        class="portfolio section"
-        id="portfolio"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
-      >
-        <h2 class="section__title">Portfolio</h2>
-        <span class="section__subtitle">Most recent work</span>
-
-        <div class="portfolio__container container swiper-container">
-          <div class="swiper-wrapper">
-            <!--==================== PORTFOLIO 1 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/shirazsuf.JPG"
-                alt="shirazsuf"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Shirazsuf.ir</h3>
-                <p class="portfolio__description">
-                  Shiraz start up Factory, as the center of technology and
-                  innovation in the south of the country with a space of 10,000
-                  square meters in the center of Shiraz.
-                </p>
-                <a
-                  href="https://shirazsuf.ir/#spaces"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+                <h4 class="services__modal-title">Seguridad Web</h4>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Prevención activa de inyecciones SQL (SQLi) y secuencias de comandos en sitios cruzados (XSS).</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Validaciones robustas y sanitización estricta del lado del servidor.</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Aplicación de buenas prácticas OWASP para el desarrollo web de alta seguridad.</p>
+                  </li>
+                </ul>
               </div>
             </div>
-
-            <!--==================== PORTFOLIO 2 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/chatmesenger.JPG"
-                alt="chat messenger"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Chat messenger</h3>
-                <p class="portfolio__description">
-                  An online application that has features similar to WhatsApp.
-                  (Note: that Iranian users need a vpn to use)
-                </p>
-                <a
-                  href="https://chat-messenger-nine.vercel.app/chats"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--==================== PORTFOLIO 3 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/lussohomeSc.JPG"
-                alt="lussohom.com"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">Lussohome.com</h3>
-                <p class="portfolio__description">
-                  Losohome is a store for buying home appliances.
-                </p>
-                <a
-                  href="https://www.lussoohome.com/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--==================== PORTFOLIO 4 ====================-->
-            <div class="portfolio__content grid swiper-slide">
-              <img
-                src="./assets/img/padamoSc.JPG"
-                alt="padamo.ir"
-                class="portfolio__img"
-              />
-              <div class="portfolio__data">
-                <h3 class="portfolio__title">padamo.ir</h3>
-                <p class="portfolio__description">
-                  Padamo is a site for discussing religious issues.
-                </p>
-                <a
-                  href="https://padamo.ir/"
-                  class="button button--flex button--small portfolio__button"
-                >
-                  Demo
-                  <i class="uil uil-arrow-right button__icon"></i>
-                </a>
-              </div>
-            </div>
-
-            <!--==================== PORTFOLIO 3 ====================-->
-            <!-- <div class="portfolio__content grid swiper-slide">
-                        <img src="./assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-                        <div class="portfolio__data">
-                            <h3 class="portfolio__title">Online store </h3>
-                            <p class="portfolio__description">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias nemo rem itaque,
-                                quod explicabo recusand
-                            </p>
-                            <a href="#" class="button button--flex button--small portfolio__button">
-                                Demo
-                                <i class="uil uil-arrow-right button__icon"></i>
-                            </a>
-                        </div>
-                    </div> -->
           </div>
-          <!-- ---- add Arrows --- -->
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+
+          <!-- SERVICE 3 -->
+          <div 
+            class="services__card glass-panel"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <div>
+              <i class="uil uil-cloud services__icon"></i>
+              <h3 class="services__title">Cloud y <br />DevOps</h3>
+            </div>
+            <p class="services__description">
+              Integración de almacenamiento y claves seguras en AWS, contenedores Docker y flujos colaborativos Scrum.
+            </p>
+            <span class="services__btn">
+              Ver más <i class="uil uil-arrow-right"></i>
+            </span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="uil uil-times services__modal-close"></i>
+                <h4 class="services__modal-title">Cloud y DevOps</h4>
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Integración y configuración de servicios en la nube de AWS como S3 y Secrets Manager.</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Contenedores Docker, control de versiones con Git y flujos automatizados en Postman.</p>
+                  </li>
+                  <li class="services__modal-item">
+                    <i class="uil uil-check-circle services__modal-icon"></i>
+                    <p>Trabajo colaborativo eficiente y estructurado bajo marcos ágiles (Scrum).</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!--==================== PROJECT IN MIND ====================-->
-      <section
-        class="project section"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
+      <section 
+        class="project-mind section"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       >
-        <div class="project__bg">
-          <div class="project__container container grid">
-            <div class="project__data">
-              <h2 class="project__title">You have a new project</h2>
-              <p class="project__description">
-                Contact me now and get a 30% discount
+        <div class="container">
+          <div class="project-mind__banner glass-panel">
+            <div class="project-mind__data">
+              <h2 class="project-mind__title">¿Tienes un proyecto en mente?</h2>
+              <p class="project-mind__description">
+                Puedo ayudarte a construir soluciones backend, APIs robustas, bases de datos optimizadas y aplicaciones empresariales seguras y escalables.
               </p>
-              <a href="#contact" class="button button--flex button-white">
-                Contact Me
-                <i class="uil uil-message project__icon button__icon"></i>
+              <a href="#contact" class="btn btn--primary" style="box-shadow: 0 4px 15px rgba(0,0,0,0.15);">
+                Hablemos <i class="uil uil-message btn__icon"></i>
               </a>
             </div>
 
-            <!-- <img src="./assets/img/meremovebg.png" alt="" class="project__img"> -->
-            <img
-              src="./assets/img/contactMen.png"
-              alt=""
-              class="project__img"
-            />
+            <div class="project-mind__img-wrapper">
+              <img
+                src="./assets/img/contactMen.png"
+                alt="Trabajemos juntos"
+                class="project-mind__img"
+              />
+            </div>
           </div>
         </div>
       </section>
 
       <!--==================== CONTACT ME ====================-->
-      <section
-        class="contact section"
-        id="contact"
-        data-aos="fade-up"
-        data-aos-offset="300"
-        data-aos-duration="2500"
-      >
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contacto</h2>
+        <span class="section__subtitle">Ponte en contacto</span>
 
         <div class="contact__container container grid">
-          <div>
-            <div class="contact__information">
-              <i class="uil uil-phone contact__icon"></i>
+          <div 
+            class="contact__info-list"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <!-- Call card -->
+            <div class="contact__card glass-panel">
+              <div class="contact__card-icon">
+                <i class="uil uil-phone"></i>
+              </div>
               <div>
-                <h3 class="contact__title">Call Me</h3>
-                <span class="contact__subtitle">+98 901 062 9831</span>
+                <h3 class="contact__card-title">Llámame</h3>
+                <span class="contact__card-value">+52 462 653 7363</span>
               </div>
             </div>
 
-            <div class="contact__information">
-              <i class="uil uil-envelope contact__icon"></i>
+            <!-- Email card -->
+            <div class="contact__card glass-panel">
+              <div class="contact__card-icon">
+                <i class="uil uil-envelope"></i>
+              </div>
               <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle">DaneshCode.Dev@gmail.com</span>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-value">gustavoangelc2005@gmail.com</span>
               </div>
             </div>
 
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
+            <!-- Location card -->
+            <div class="contact__card glass-panel">
+              <div class="contact__card-icon">
+                <i class="uil uil-map-marker"></i>
+              </div>
               <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle">Iran - shiraz</span>
+                <h3 class="contact__card-title">Ubicación</h3>
+                <span class="contact__card-value">Irapuato, Guanajuato, México</span>
+              </div>
+            </div>
+
+            <!-- LinkedIn card -->
+            <div class="contact__card glass-panel">
+              <div class="contact__card-icon">
+                <i class="uil uil-linkedin-alt"></i>
+              </div>
+              <div>
+                <h3 class="contact__card-title">LinkedIn</h3>
+                <span class="contact__card-value">
+                  <a
+                    href="https://www.linkedin.com/in/juan-gustavo-angel-cruz-mendez-23413231b/"
+                    target="_blank"
+                    class="contact__card-link"
+                  >
+                    juan-gustavo-angel-cruz-mendez...
+                  </a>
+                </span>
+              </div>
+            </div>
+
+            <!-- GitHub card -->
+            <div class="contact__card glass-panel">
+              <div class="contact__card-icon">
+                <i class="uil uil-github"></i>
+              </div>
+              <div>
+                <h3 class="contact__card-title">GitHub</h3>
+                <span class="contact__card-value">
+                  <a 
+                    href="https://github.com/gusmendez3249" 
+                    target="_blank"
+                    class="contact__card-link"
+                  >
+                    gusmendez3249
+                  </a>
+                </span>
               </div>
             </div>
           </div>
 
-          <form action="#" method="POST" class="contact__form grid">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="" class="contact__label">Name</label>
-                <input type="text" class="contact__input" />
+          <!-- Contact Form with Floating Labels -->
+          <form 
+            action="#" 
+            method="POST" 
+            class="contact__form glass-panel"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <div class="contact__group">
+              <div class="contact__field">
+                <input type="text" id="name" class="contact__input-el" placeholder=" " required />
+                <label for="name" class="contact__label">Nombre</label>
               </div>
 
-              <div class="contact__content">
-                <label for="" class="contact__label">Email</label>
-                <input type="email" name="email" class="contact__input" />
+              <div class="contact__field">
+                <input type="email" id="email" name="email" class="contact__input-el" placeholder=" " required />
+                <label for="email" class="contact__label">Email</label>
               </div>
+            </div>
 
-              <div class="contact__content">
-                <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input" />
-              </div>
+            <div class="contact__field">
+              <input type="text" id="project" class="contact__input-el" placeholder=" " required />
+              <label for="project" class="contact__label">Proyecto</label>
+            </div>
 
-              <div class="contact__content">
-                <label for="" class="contact__label">Message</label>
-                <textarea
-                  name="message"
-                  id=""
-                  cols="0"
-                  rows="4"
-                  class="contact__input"
-                ></textarea>
-              </div>
+            <div class="contact__field">
+              <textarea
+                name="message"
+                id="message"
+                cols="0"
+                rows="5"
+                class="contact__input-el"
+                placeholder=" "
+                required
+              ></textarea>
+              <label for="message" class="contact__label">Mensaje</label>
+            </div>
 
-              <div>
-                <button type="submit" class="button button--flex">
-                  Send Message
-                  <i class="uil uil-message button__icon"></i>
-                </button>
-              </div>
+            <div style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn--primary">
+                Enviar mensaje <i class="uil uil-message btn__icon"></i>
+              </button>
             </div>
           </form>
         </div>
@@ -831,57 +931,57 @@
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
-      <div class="footer__bg">
-        <div class="footer__container container grid">
-          <div>
-            <h1 class="footer__title">Danesh</h1>
-            <span class="footer__subtitle">Frontend developer</span>
-          </div>
+      <div class="footer__container container">
+        <h1 class="footer__logo">Juan Gustavo</h1>
+        <span class="footer__subtitle">Desarrollador de Software Backend</span>
 
-          <ul class="footer__links">
-            <li>
-              <a href="#services" class="footer__link">Services</a>
-            </li>
-            <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" class="footer__link">contactme</a>
-            </li>
-          </ul>
+        <ul class="footer__links">
+          <li>
+            <a href="#services" class="footer__link">Servicios</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Proyectos</a>
+          </li>
+          <li>
+            <a href="#contact" class="footer__link">Contacto</a>
+          </li>
+        </ul>
 
-          <div class="footer__socials">
-            <a
-              href="https://www.linkedin.com/in/DaneshCode"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
+        <div class="footer__socials">
+          <a
+            href="https://www.linkedin.com/in/juan-gustavo-angel-cruz-mendez-23413231b/"
+            target="_blank"
+            class="footer__social-link"
+            title="LinkedIn"
+          >
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
 
-            <a
-              href="https://github.com/DaneshCode"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-github"></i>
-            </a>
-            <a
-              href="mailto:DaneshCode.Dev@gmail.com"
-              target="_blank"
-              class="footer__social"
-            >
-              <i class="uil uil-envelope"></i>
-            </a>
-          </div>
+          <a
+            href="https://github.com/gusmendez3249"
+            target="_blank"
+            class="footer__social-link"
+            title="GitHub"
+          >
+            <i class="uil uil-github"></i>
+          </a>
+
+          <a
+            href="mailto:gustavoangelc2005@gmail.com"
+            target="_blank"
+            class="footer__social-link"
+            title="Email"
+          >
+            <i class="uil uil-envelope"></i>
+          </a>
         </div>
+
         <p class="footer__copy">
-          made with ❤️ by
-          <a href="https://daneshcode.github.io/cv-website/"
-            >Danesh <i class="uil uil-arrow-left"></i
-          ></a>
+          Sitio personal de Juan Gustavo Ángel Cruz Méndez
         </p>
-        <p class="footer__copy">&#169; DaneshCode All right reserved</p>
+        <p class="footer__rights">
+          &#169; Juan Gustavo. Todos los derechos reservados.
+        </p>
       </div>
     </footer>
 
@@ -890,20 +990,20 @@
       href="#body"
       class="scrollup"
       id="scroll-up"
-      data-aos="fade-up"
-      data-aos-offset="300"
-      data-aos-duration="2500"
+      title="Volver arriba"
     >
-      <i class="uil uil-arrow-up scrollup__icon"></i>
+      <i class="uil uil-arrow-up"></i>
     </a>
 
-    <!--==================== SWIPER JS ====================-->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+
 
     <!--==================== AOS JS ====================-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        once: true,
+        duration: 1000
+      });
     </script>
 
     <!--==================== MAIN JS ====================-->
